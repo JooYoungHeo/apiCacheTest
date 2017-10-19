@@ -1,0 +1,11 @@
+{
+  "name": "apiCacheTest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JooYoungHeo/apiCacheTest.git",
+  "author": "JooYoungHeo <jyhur900226@naver.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.3.0"
+  }
+}
