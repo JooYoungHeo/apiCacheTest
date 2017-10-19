@@ -6,6 +6,7 @@
   "author": "JooYoungHeo <jyhur900226@naver.com>",
   "license": "MIT",
   "dependencies": {
-    "koa": "^2.3.0"
+    "koa": "^2.3.0",
+    "koa-mount": "^3.0.0"
   }
 }
