@@ -1,11 +1,13 @@
 const express = require('express');
 const path = require('path');
+const apicache = require('apicache');
 
 const router = express.Router();
+let cache = apicache.middleware
 
 let {Sports} = require(path.join(process.cwd(), 'models'));
 
-router.get('/', (req, res) => {
+router.get('/', cache('1 minutes'), (req, res) => {
   findSports().then(result => {
     res.json(result);
   }).catch(err => {
