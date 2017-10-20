@@ -1,7 +1,6 @@
 const koa = require('koa');
 const router = require('koa-router');
 const path = require('path');
-
 const Koa = new koa();
 const Router = new router();
 
@@ -17,7 +16,7 @@ Router.get('/', async (ctx, next) => {
 
 function findSports() {
   return new Promise((resolve, reject) => {
-    Sports.find().skip(0).limit(10).exec((err, item) => {
+    Sports.find({'cafename': '테스트'}).exec((err, item) => {
       err? reject(err): resolve(item);
     });
   });
